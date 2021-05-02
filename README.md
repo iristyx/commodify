@@ -38,19 +38,19 @@ Markdown was used to write the final report and other project documents. Markdow
 
 Commodify allows the user to search for raw data on commodity supply and demand and also presents visualisations of that data. Furthermore, since weather and climate are crucial determinants of the supply and demand of many commodities, it returns weather data and charts relevant to the commodity search. This illustrates not only trends in the commodities markets, but also the interaction between weather and climate. The site has a homepage and two functional pages, a "Dashboard" and a "Search" page, as well as a static "Contact" page designed for Commidify users to get in touch with the development team for any enquires, complaints, or suggestions.
 
-![](commodify-home.png)
+![](docs/commodify-home.png)
 
 #### Dashboard
 
 The dashboard page gives the user a overview of the commodities market in graphical display formats. For the purpose of the project, the information presented on this page is for the USA only, due to the fact the data is most complete and available for the USA. The page contains two charts: the first chart presents a broad overview of production levels of commodities (soy, corn and wheat are the major stocks in USA) and electricity. Total rainfall level is overlaid and presented on the same chart to illustrate the broad relationship between rainfall levels and commodity production levels, if any. The second chart presents the total electricity production of each of the 50 USA states, levels illustrated by the colors (with red being the highest, and light yellow being the lowest).
 
-![](commodify-dashboard.png)
+![](docs/commodify-dashboard.png)
 
 #### Search
 
 The search page allows the user to select a commodity sector, for example 'agriculture', or 'renewables'. After selecting one of these options the user will be presented with the option to search for country or USA state level data, and will then be shown drop-down menus for the data available. Once the selections are made and the 'Submit' button is pressed, the user will see the commodity's production and consumption data in graphical display (line chart) and tabular form. Should the user select to view commodity data for a USA state (instead of country), an additional query is performed to retrieve weather information for the selected state. Monthly average rainfall and temperature data are then presented in a separate chart and tabular format below the first chart.
 
-![](commodify-search.png)
+![](docs/commodify-search.png)
 
 ## Data
 
@@ -187,7 +187,7 @@ The **Commodity** table is in BCNF. We achieved this by placing metadata, such a
 
 The weather data are held in a table called **Weather**, which is also in BCNF. While a range of climate parameters were included in the raw dataset, the team identified that rainfall and precipitation were the most relevant weather parameters to study commodities trends, and hence, other weather data was omitted (e.g. wind speeds, haze) at this stage of the project to avoid unnecessary complexity of the dataset.
 
-![](CommodifyERD.png)
+![](docs/CommodifyERD.png)
 
 ### Relation schema: 
 
